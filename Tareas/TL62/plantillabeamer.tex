@@ -1,0 +1,55 @@
+% Plantilla para elaborar presentaciones con LaTeX Beamer
+
+\documentclass[xcolor=pdftex,dvinames,table]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+
+\usetheme{Warsaw}
+
+\title{FBRTL62}
+\author{Fernando Barranco Rodríguez}
+\date{10 de enero de 2017}
+
+\begin{document}
+
+
+\frame{\titlepage} % Portada con datos del preámbulo
+\frame{\tableofcontents} % Índice de la presentación
+
+\section{1}%Bloque para crear diapositiva
+\begin{frame}
+Sección 1, Bloque 1.
+\end{frame}%Fin de bloque
+
+\begin{frame}
+Sección 1, Bloque 2.
+\begin{enumerate}
+\item 1er elemento
+\item 2do elemento
+\item 3er elemento
+\end{enumerate}
+\end{frame}%Fin de bloque
+
+\section{2}%Bloque para crear diapositiva
+\begin{frame}
+Sección 2, Bloque 1.
+\begin{columns}[cc]
+\column{2in}
+Columna 1
+\column{2in}
+Columna 2
+\end{columns}
+\end{frame}%Fin de bloque
+
+\begin{frame}
+Sección 2, Bloque 2.
+\begin{columns}[cc]
+\column{2in}
+Columna 1
+\column{2in}
+Columna 2
+\end{columns}
+\end{frame}%Fin de bloque
+
+
+\end{document}

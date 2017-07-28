@@ -1,0 +1,122 @@
+a. ¿Cuál es la estructura básica de una presentación con Beamer?
+
+   Preámbulo del documento (tipo de documento, título, autor, fecha ...)
+
+  \begin{document}
+  \frame{\titlepage}
+  \frame{\tableofcontents}
+  \section{Primer tema}
+  \begin{frame}
+  Comentarios sobre el primer tema.
+  \end{frame}
+  ...
+  \end{document}
+
+
+b. ¿Con qué comandos se determina el tema (la apariencia general) y el color de la presentación?
+   ¿Cuáles son sus respectivas opciones? ¿Dónde deben escribirse estos comandos?
+
+   Apariencia:
+   Esto se indica por medio de la instrucción \usetheme{opción} en el preámbulo del documento.
+   Las opciones disponibles son:
+
+   Antinbes
+   Berkeley
+   Boadilla
+   CambridgeUS
+   Darmstadt
+   Dresden
+   Goettingen
+   Ilmenau
+   Luebeck
+   Malmoe
+   Montpellier
+   Pittsburgh
+   Singapore
+   Warsaw
+   AnnArbor
+   Bergen
+   Berlin
+   boxes
+   Copenhagen
+   default
+   Frankfurt
+   Hannover
+   JuanLesPins
+   Madrid
+   Marburg
+   PaloAlto
+   Rochester
+   Szeged
+
+   Color:
+   El color predenido para cada tema puede cambiarse por medio de la instruccion \usecolortheme{opción}
+   también en el preámbulo del documento. Las opciones disponibles son:
+
+   albatross
+   beetle
+   default
+   dove
+   lily
+   rose
+   horse
+   structure
+   wolverine
+   beaver
+   crane
+   dolphin
+   orchid
+   seagull
+   sidebartab
+   whale
+
+
+c. ¿Cuáles comandos se utilizan para crear bloques para resaltar enunciados matemáticos?
+
+   \begin{block}{bloque}
+   ... texto ...
+   \end{block}
+
+
+d. ¿Cómo se puede dividir una diapositiva en dos?
+
+   A través del código:
+
+   \begin{columns}[cc] %centrado
+   \column{tamaño de columna1}
+   ... contenido de la columna1 ...
+   \column{tamaño de columna2}
+   ... contenido de la columna2 ...
+   \end{columns}
+
+
+e. ¿Cómo se insertan tablas con colores en las diapositivas?
+
+   %En el preámbulo del documento:
+   \documentclass[xcolor=pdftex,dvinames,table]{beamer}
+   %En el cuerpo del documento:
+   \rowcolors{1}{tono1}{tono2}
+   \begin{tabular}{ll}\hline
+   ... contenido de la tabla ...
+   \end{tabular}
+
+
+f. ¿Cómo puede incluirse el entorno verbatim?
+
+   \begin{verbatim}... \end{verbatim}
+   Con Beamer, es necesario denir la diapositiva de este modo:
+
+   \begin{frame}[containsverbatim]
+   ... Texto de la diapositiva y comandos en el entorno verbatim ...
+   \end{frame}
+
+
+g.¿Cómo pueden insertarse las referencias?
+
+   Si te basas en entradas generadas con BibTeX, puedes abrir el archivo .bbl,
+   copiar y pegar los elementos que desees. Ej:
+
+   \begin{thebibliography}{1}
+   \bibitem{estilo}
+   ... contenido de la bibliografía ...
+   \end{thebibliography}

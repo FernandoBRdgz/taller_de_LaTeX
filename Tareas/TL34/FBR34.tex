@@ -1,0 +1,48 @@
+% Plantilla para el taller de LaTeX
+
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsthm}
+
+
+\swapnumbers
+\begin{document}
+
+\title{FBRTL34}
+\author{Fernando Barranco Rodríguez}
+\date{7 Enero 2017}
+\maketitle
+\newpage
+
+\section{Ejemplos de enunciados}
+
+\theoremstyle{definition}
+\newtheorem{def1}{Definición}[section]
+\begin{def1}
+Sea $u$ un entero positivo. Un código $C$ se dice \textit{detector de $u$
+errores} si, siempre que una palabra código incurre en al menos un error y a
+lo más $u$ errores, la palabra resultante no es una palabra código. Un código
+$C$ se dice \textit{detector de exactamente $u$ errores} si es detector de $u$ errores, pero
+no detector de $(u+1)$ errores. 
+\end{def1}
+
+\theoremstyle{remark}
+\newtheorem{ej1}[def1]{Ejemplo}
+\begin{ej1}
+Sea el código binario $C = \{00000, 00111,11222\}$. Analicemos 
+los cambios necesarios en las coordenadas de cada palabra código de manera
+que podamos obtener alguna otra palabra código existente en $C$.
+\end{ej1}
+
+\theoremstyle{plain}
+\newtheorem{teo1}[def1]{Teorema}
+\begin{teo1}
+Un código C es \emph{ detector de u errores } si y sólo si $d(C) \geq u+1$ es decir, un código con distancia d es un código corrector de exactamente $(d-1)$ errores.
+\proof
+La prueba se sigue por definición.
+\endproof
+\end{teo1}
+
+
+\end{document}

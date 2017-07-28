@@ -1,0 +1,103 @@
+% Plantilla para el taller de LaTeX
+
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{float}
+
+
+\begin{document}
+
+
+\title{Ejemplo para insertar gráficos y figuras \\ en \LaTeXe}
+\author{Fernando Barranco Rodríguez}
+\date{8 de Enero de 2017.}
+\maketitle
+
+Este es un pequeño ejemplo que muestra los efectos producidos por diversas opciones del entorno figure. 
+Comencemos con el comando \texttt{/listoffigures} que produce el siguiente índice:
+
+\listoffigures
+
+Este es el gráfico en su tamaño original:
+
+\begin{center}
+\includegraphics{LaTeXlion2.png}
+\end{center}
+
+\newpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{LaTeXlion2.png}
+\caption[Gráfico con textwidth]{Gráfico con textwidth}
+\label{fig:1}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1 cm]{LaTeXlion2.png}
+\caption[Gráfico con width=1.00 cm]{Gráfico con width=1.00 cm}
+\label{fig:2}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=1 cm, height=3 cm]{LaTeXlion2.png}
+\caption[Gráfico con width=1.00 cm y height=3.00 cm]{Gráfico con width=1.00 cm y height=3.00 cm}
+\label{fig:3}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0 cm, height=3.0 cm, keepaspectratio]{LaTeXlion2.png}
+\caption[Gráfico con width=1.00 cm, height=3.00 cm y keepaspectratio]{Gráfico con width=1.00 cm, height=3.00 cm y keepaspectratio}
+\label{fig:4}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0 cm, height=1.0 cm, draft]{LaTeXlion2.png}
+\caption[Gráfico con width=1.00 cm, height=1.00 cm y draft]{Gráfico con width=1.00 cm, height=1.00 cm y draft}
+\label{fig:5}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.75]{LaTeXlion2.png}
+\caption[Gráfico con scale=0.75]{Gráfico con scale=0.75}
+\label{fig:6}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=3.0 cm, height=3.0 cm, angle=45]{LaTeXlion2.png}
+\caption[Gráfico con width=3.00 cm, height=3.00 cm y angle=45]{Gráfico con width=3.00 cm, height=3.00 cm y angle=45}
+\label{fig:7}
+\end{figure}
+
+
+\newpage
+\section*{Parámetros de \texttt{/includegraphics} }
+
+\bigskip
+\bigskip
+\begin{enumerate}[a.]
+\item \textbf{width:}\\ Indica a \LaTeX\ la Anchura de la imágen. (debe especificarse preferentemente en centímetros)
+\item \textbf{height:}\\ Indica a \LaTeX\ la Altura de la imágen. (debe especificarse preferentemente en centímetros)
+\item \textbf{textwidth:}\\ Indica a \LaTeX\ que debe Escalar la imágen de forma ``ajustada".
+\item \textbf{keepaspectratio:}\\ Indica a \LaTeX\ que Mantenga el aspecto en forma de cuadrado independientemente de si se indica una altura distinta a la anchura.
+\item \textbf{scale:}\\ Indica a \LaTeX\ la Escala de la imágen. (debe especificarse preferentemente en porcentaje)
+\item \textbf{draft:}\\ Indica a \LaTeX\ que ``imprima" la Ruta donde se ubica guardada la imágen.
+\item \textbf{angle:}\\ Indica a \LaTeX\ el Ángulo de la imágen. (debe especificarse preferentemente en grados)
+\end{enumerate}
+
+\end{document}

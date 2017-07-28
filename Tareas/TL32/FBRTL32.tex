@@ -1,0 +1,61 @@
+% Plantilla para el taller de LaTeX
+
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{FBRTL32}
+\author{Fernando Barranco Rodríguez}
+\date{6 Enero 2017}
+\maketitle
+
+\newpage
+
+\begin{enumerate} 
+
+\item \begin{align*}
+h_{w_{H}} (\delta) &= \min_{z \in (0,1] } \log_{q} \frac{f_{w_H}}{z^\delta} \\
+&= \min_{z \in (0,1] } \left( \log_{q} f_{w_{H}} (z)- \log_{q} z^\delta  \right) \\
+&= \min_{z \in (0,1] } \left( \log_{q}\left( 1+ \left(q-1 \right) z \right )- \delta \log_{q}z \right) \\
+&= \log_{q} \left( 1 + \left( q-1\right) \frac{\delta}{\left( q-1 \right) \left( 1-\delta \right)} \right)
+   - \delta \log_{q} \left( \frac{\delta}{\left( q-1 \right) \left( 1-\delta \right)} \right) \\
+&= \log_{q} \left( \frac{1}{1-\delta} \right) - \delta \log_{q} \delta + \delta \log_{q} \left( q-1 \right) 
+   + \delta \log_{q} \left( q-1 \right) \\
+&= \delta \log_{q} \frac{1}{\delta} + \left( 1-\delta \right) \log_{q} \frac{1}{1-\delta} + \delta \log_{q} \left( q-1 \right).
+\end{align*}
+
+\item \begin{align*}
+ab &= [x_1, x_2]qx_2[x_1, x_2][x_1, x_2]x_1+q^{-1}qx_2[x_1, x_2] \left[ [x_1, x_2]+q^{-1}x_1x_2 \right] [x_1, x_2]x_1 \\
+&= [x_1, x_2]qx_2[x_1, x_2][x_1, x_2]x_1 + x_2[x_1, x_2][x_1, x_2][x_1, x_2]x_1 \\
+& \quad + x_2[x_1, x_2] \\
+\end{align*}
+
+\item \begin{align}
+[x_{i}, x_{j}] &= 0, \qquad \textrm{si} \; |i-j| > 1 ; \\
+[[x_{i}, x_{i+1}],x_{i+1}] &= 0, \qquad \textrm{si} \; 1 \leq i <n; \\
+[x_{i}, [x_{i}, x_{i+1}]] &= 0, \qquad \textrm{si} \; 1 \leq i <n.
+\end{align}
+
+\item \begin{align}
+\setcounter{equation}{0}
+[x_{i}, x_{j}] &= 0, \qquad \textrm{si} \; |i-j| > 1 ; \nonumber \\
+[[x_{i}, x_{i+1}],x_{i+1}] &= 0, \qquad \textrm{si} \; 1 \leq i <n; \nonumber \\
+[x_{i}, [x_{i}, x_{i+1}]] &= 0, \qquad \textrm{si} \; 1 \leq i <n.
+\end{align} 
+
+\item \begin{align*}
+e^{i\theta_{1}}e^{i\theta_{2}} &= ( \cos \theta_{1} + i\sin \theta_{1} )( \cos \theta_{2} + i\sin \theta_{2} ) \\
+&= ( \cos \theta_{1}\cos \theta_{2} - \sin \theta_{1}\sin \theta_{2} ) + i( \cos \theta_{1}\sin \theta_{2} + \sin \theta_{1}
+   \cos \theta_{2} ) \\
+&= \cos( \theta_{1} + \theta_{2} ) + i\sin( \theta_{1} + \theta_{2} ) \\
+&= e^{i(\theta_{1} + \theta_{2})}
+\end{align*}
+
+\end{enumerate}
+
+\end{document}
+
+
