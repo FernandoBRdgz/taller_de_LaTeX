@@ -15,17 +15,24 @@ A pesar de que Overleaf ya cuenta con plantillas creadas, elaboraremos una que n
 I. Crea el archivo base: La clase será article y deberá tener las siguientes características:
 
 a. El comentario "Plantilla para el taller de LaTeX” en la primera línea.
+
 b. 12 puntos como tamaño de la fuente.
+
 c. El paquete babel con la opción spanish.
+
 d. Permitir el uso de acentos.
+
 e. Título (cambiará en cada actividad, por lo que se deja en blanco), nombre del autor y la fecha.
 
-II. Guarda el archivo con el nombre plantilla.tex 
+
+II. Guarda el archivo con el nombre 'plantilla.tex' 
 
 Si trabajas en TeXnicCenter, guárdala dentro de una carpeta con el nombre Plantillas Taller (puede ser en Mis Documentos). Es necesario configurar TeXnicCenter para reconocer la plantilla:
 
 a. Haz clic en `Tools` (ubicado en la barra de herramientas). Elige `Options`.
-b. En la pestaña `Directories`, agrega a `Document` `template directories` la carpeta "Plantillas Taller LaTeX".
+
+b. En la pestaña `Directories`, agrega a `Document` `Template Directories` la carpeta "Plantillas Taller LaTeX".
+
 c. Reinicia TeXnicCenter.
 
 III. Para usar la plantilla como base para crear tus documentos:
