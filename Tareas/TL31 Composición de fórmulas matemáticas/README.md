@@ -4,7 +4,7 @@
 
 ---
 
-**Objetivo: En esta actividad practicarás la elaboración de composiciones matemáticas con los comandos de LaTeX.
+**Objetivo:** En esta actividad practicarás la elaboración de composiciones matemáticas con los comandos de LaTeX.
 
 **Descripción:**
 
