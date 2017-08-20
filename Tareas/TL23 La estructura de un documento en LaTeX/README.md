@@ -1,4 +1,4 @@
-﻿# Taller de Introducción a LaTeX
+# Taller de Introducción a LaTeX
 
 ## TL23:La estructura de un documento en LaTeX
 
@@ -196,14 +196,22 @@ Overleaf cuenta con la opción `More` dentro de la barra de herramientas que ayu
 I. Elabora un documento de la clase artículo con: 
 
 a. Portada (con título, autor y fecha). 
-b. Resumen. 
-c. Indice. 
-d. Tres secciones. 
-e. Al menos una referencia cruzada. 
-f. Una lista numerada. 
-g. Una lista con viñetas. 
-h. Cinco tipos diferentes de fuente a lo largo del texto. 
-i. Cinco tamaños distintos de fuente a lo largo del texto. 
-j. Un párrafo centrado, uno alineado a la izquierda y otro a la derecha. 
 
+b. Resumen. 
+
+c. Indice. 
+
+d. Tres secciones. 
+
+e. Al menos una referencia cruzada. 
+
+f. Una lista numerada. 
+
+g. Una lista con viñetas. 
+
+h. Cinco tipos diferentes de fuente a lo largo del texto. 
+
+i. Cinco tamaños distintos de fuente a lo largo del texto. 
+
+j. Un párrafo centrado, uno alineado a la izquierda y otro a la derecha. 
 
